@@ -1,0 +1,221 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+  .easybank {
+    flex-wrap: nowrap;
+    padding-bottom: 90px;
+  }
+  .easybank-intro {
+    order: unset;
+    width: 100%;
+    padding: 50px 30px 0;
+  }
+  .easybank-intro h1,
+  .easybank-intro p {
+    margin-bottom: 0;
+  }
+  .section-caption {
+    padding: 0 100px;
+  }
+  .easybank-feature__item {
+    width: 50%;
+    padding: 0 10px;
+  }
+  .article-item {
+    width: 500px;
+  }
+  .article-title {
+    font-size: 25px;
+  }
+  .article-content {
+    font-size: 15px;
+  }
+  footer {
+    flex-wrap: nowrap;
+  }
+  .navbar {
+    position: static;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  button.desktop-view {
+    display: inline-block !important;
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    margin-top: 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar ul li {
+    color: hsl(233, 8%, 62%);
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .navbar ul li::after {
+    margin: 25px auto 0;
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: rgb(49, 211, 92);
+    background: linear-gradient(
+      90deg,
+      rgba(49, 211, 92, 1) 25%,
+      rgba(43, 183, 218, 1) 100%
+    ); 
+    transform: scale(0);
+  }
+  .navbar ul li:hover::after {
+    transform: scale(1);
+  }
+  .easybank-intro h1,
+  .easybank-intro p {
+    text-align: start;
+  }
+  .easybank-intro h1 {
+    font-size: 50px;
+  }
+  .easybank-intro p {
+    font-size: 18px;
+  }
+  .easybank-intro button {
+    margin: 0;
+  }
+  .easybank-mockup__mobiles {
+    top: -60px;
+    right: -85px;
+  }
+  .easybank-mockup__bg img {
+    transform: scale(1.5);
+    right: -100px;
+  }
+  .section-heading {
+    text-align: start;
+    margin-left: 35px;
+  }
+  .section-caption {
+    width: 800px;
+    margin-bottom: 50px;
+    text-align: start;
+    padding-left: 35px;
+  }
+  .easybank-feature__item {
+    width: 25%;
+    text-align: start;
+  }
+  .item-caption {
+    font-size: 16px;
+  }
+  .article-item {
+    width: 220px;
+  }
+  .article-title {
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .article-content {
+    font-size: 10px;
+  }
+  .container {
+    justify-content: space-between;
+  }
+  .footer-slice {
+    text-align: start;
+  }
+  .footer-slice .social {
+    justify-content: start;
+  }
+  .req-invite {
+    margin-right: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .req-invite:hover {
+    opacity: 0.5;
+  }
+  .article-title:hover {
+    color: rgb(49, 211, 92);
+  }
+  footer ul li{
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+  footer ul li:hover {
+    color: rgb(49, 211, 92);
+  }
+  footer .social svg path{
+    transition: all 0.2s linear;
+  }
+  footer .social svg:hover  path{
+    fill: rgb(49, 211, 92);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  header {
+    height: 100px;
+  }
+  .navbar ul {
+    padding-top: 15px;
+  }
+  .navbar ul li::after {
+    margin-top: 50px;
+  }
+  .easybank-mockup__mobiles {
+    top: -285px;
+  }
+  .easybank-mockup__bg img {
+    top: -180px;
+  }
+  .easybank-intro h1 {
+    font-size: 70px;
+  }
+  .easybank-intro p {
+    font-size: 25px;
+  }
+  .easybank-feature__item {
+    width: 260px;
+  }
+  .section-heading {
+    margin-left: 100px;
+  }
+  .section-caption {
+    padding-left: 100px;
+  }
+  .req-invite {
+    width: 180px;
+    height: 50px;
+    margin-right: 0;
+  }
+  .easybank-intro button {
+    margin-top: 50px;
+  }
+  .navbar ul {
+    width: 450px;
+  }
+  .easybank-intro p {
+    margin-top: 20px;
+  }
+  .article-item {
+    width: 250px;
+  }
+  .container {
+    justify-content: space-evenly;
+  }
+}
